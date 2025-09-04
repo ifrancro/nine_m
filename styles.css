@@ -348,15 +348,26 @@ body {
         padding: 20px;
         margin-left: 20px;
         margin-right: 20px;
+        max-width: 95%;
     }
     
     .title {
         font-size: 2em;
     }
     
+    .subtitle {
+        font-size: 1em;
+    }
+    
     .landscape-image {
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        height: 250px;
+    }
+    
+    /* Imagen del mensaje responsive */
+    .landscape-image.mensaje-image {
+        width: 280px;
+        height: 200px;
     }
     
     .cards-container {
@@ -372,9 +383,23 @@ body {
     .card-content p {
         font-size: 1em;
     }
+    
+    .message {
+        padding: 20px;
+        font-size: 1em;
+        margin: 20px 0;
+    }
+    
+    .heart-icon {
+        font-size: 50px;
+    }
 }
 
 @media (max-width: 480px) {
+    .nav {
+        padding: 8px 15px;
+    }
+    
     .nav-title {
         font-size: 1.2em;
     }
@@ -386,5 +411,103 @@ body {
     .nav-link {
         padding: 6px 10px;
         font-size: 0.8em;
+    }
+    
+    .container {
+        margin-top: 140px;
+        padding: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: 98%;
+    }
+    
+    .title {
+        font-size: 1.8em;
+    }
+    
+    .subtitle {
+        font-size: 0.9em;
+    }
+    
+    .landscape-image {
+        width: 200px;
+        height: 200px;
+    }
+    
+    /* Imagen del mensaje responsive para móviles pequeños */
+    .landscape-image.mensaje-image {
+        width: 250px;
+        height: 180px;
+    }
+    
+    .cards-container {
+        gap: 15px;
+        margin: 15px 0;
+    }
+    
+    .card-content {
+        padding: 15px;
+    }
+    
+    .card-content p {
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
+    
+    .message {
+        padding: 15px;
+        font-size: 0.9em;
+        margin: 15px 0;
+    }
+    
+    .heart-icon {
+        font-size: 40px;
+    }
+    
+    .love-button {
+        padding: 12px 25px;
+        font-size: 1em;
+        margin: 15px 5px;
+    }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 360px) {
+    .nav-title {
+        font-size: 1em;
+    }
+    
+    .nav-link {
+        padding: 5px 8px;
+        font-size: 0.75em;
+    }
+    
+    .container {
+        padding: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .title {
+        font-size: 1.6em;
+    }
+    
+    .landscape-image {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .landscape-image.mensaje-image {
+        width: 220px;
+        height: 160px;
+    }
+    
+    .card-content p {
+        font-size: 0.85em;
+    }
+    
+    .message {
+        font-size: 0.85em;
+        padding: 12px;
     }
 }
